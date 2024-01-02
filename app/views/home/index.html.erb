@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap">
+    <link rel="icon" href="">
     <style>
         body {
         font-family: 'League Gothic', sans-serif;
         text-align: center;
-        background-color: #333333; /* Dark Grey Background */
-        color: #e6e6e6; /* White Text Color */
+        background-color: #333333;
+        color: #e6e6e6;
         margin: 0;
         padding: 0px;
         display: flex;
@@ -47,8 +48,8 @@
 <body>
     <h1>Whisperlock</h1>
     <%= image_tag('whisperlock-logo_transparent_crop.png', id: 'logo' , alt: 'Whisperlock Logo' ) %>
-        <p>This is a placeholder site, but hopefully it will be replaced by something exciting soon.</p>
-        <p class="small-text"><strong>For debugging purposes:</strong> this site was accessed on <%= @time.strftime("%A, %b %e, %Y at %l:%M%P") %></p>
+    <p>This is a placeholder site, but hopefully it will be replaced by something exciting soon.</p>
+    <p class="small-text"><strong>For debugging purposes:</strong> this site was accessed on <%= @time.strftime("%A, %b %e, %Y at %l:%M%P") %></p>
 </body>
 
 </html>
