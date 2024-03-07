@@ -13,3 +13,65 @@
  *= require_tree .
  *= require_self
  */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInHeading {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBody {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #6E7B8B;
+    color: #F0F0F0;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.fade-in img {
+    animation: fadeInImage 0.75s ease-in-out;
+    /* max-width: 90%;
+    display: block;
+    margin: 0 auto; */
+}
+
+.fade-in h1,
+.fade-in h2,
+.fade-in h3,
+.fade-in h4,
+.fade-in h5,
+.fade-in h6 {
+    animation: fadeInHeading 1s ease-in-out;
+}
+
+.fade-in p {
+    animation: fadeInBody 1.5s ease-in-out;
+}
