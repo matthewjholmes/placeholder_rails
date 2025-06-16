@@ -6,4 +6,9 @@ class HomeController < ApplicationController
         pacific_time_zone = ActiveSupport::TimeZone.new('Pacific Time (US & Canada)')
         @time = Time.now.in_time_zone(pacific_time_zone)
     end
+
+    def sandbox
+        pacific_time_zone = ActiveSupport::TimeZone.new('Pacific Time (US & Canada)')
+        @time = Time.now.in_time_zone(pacific_time_zone)
+    end
 end
